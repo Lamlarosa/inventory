@@ -7,11 +7,11 @@ export const Documents: Paths[] = [
     heading: "Getting started",
     items: [
       {
-        title: "Teknologi Yang Digunakan",
+        title: "teknologi yang digunakan",
         href: "/teknologi-yang-digunakan",
       },
       {
-        title: "Keterkaitan Aplikasi Inventory dengan Mata Kuliah",
+        title: "Keterkaitan Dengan Mata Kuliah",
         href: "/Kaitan Matkul",
       },
     ],
