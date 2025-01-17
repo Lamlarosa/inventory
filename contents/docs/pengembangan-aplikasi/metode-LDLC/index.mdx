@@ -1,47 +1,101 @@
 
-## Metode SDLC Incremental
-Metode SDLC Incremental adalah pendekatan di mana pengembangan perangkat lunak dilakukan secara bertahap atau inkremental. Setiap tahapan (increment) mengembangkan bagian aplikasi yang lebih kecil, namun dapat digunakan dan diimplementasikan secara bertahap. Tiap increment biasanya mencakup analisis, desain, pengembangan, dan pengujian.
+## Metode SDLC Incremental=
 
-![Banner](/images/increment.webp)
+### **Increment 1: Dasar Aplikasi Inventory**
+#### **Tujuan**
+Membangun fitur utama untuk mencatat dan menampilkan data barang.
 
-## Alasan Pemilihan Metode
-Alasan memilih metode incremental dalam pengembangan Techmart adalah sebagai berikut:
-    1. Kemudahan dalam Penyesuaian dan Perubahan
-       Metode incremental memungkinkan perubahan atau penambahan fitur secara fleksibel di tengah proses pengembangan. Jika ada kebutuhan untuk memperbarui atau menambahkan fitur baru, pengembang dapat mengintegrasikannya ke dalam increment berikutnya tanpa harus memulai dari awal. Hal ini sangat berguna dalam lingkungan yang dinamis, di mana kebutuhan pengguna atau tren pasar dapat berubah.
-    2. Mengurangi Risiko Pengembangan
-       Dengan mengembangkan dan menguji setiap increment secara terpisah, risiko yang terkait dengan pengembangan dapat diminimalkan. Jika terjadi masalah dalam satu increment, itu tidak akan mempengaruhi keseluruhan proyek. Pendekatan ini memungkinkan pengembang untuk lebih mudah mengidentifikasi dan memperbaiki masalah sejak dini, sebelum masalah tersebut berkembang menjadi lebih besar.
-    3. Penggunaan Fitur Lebih Awal oleh Pengguna
-       Pendekatan incremental memungkinkan pengguna untuk mulai menggunakan bagian dari aplikasi lebih awal, bahkan ketika seluruh sistem belum sepenuhnya selesai. Fitur yang sudah siap dapat diluncurkan lebih cepat, memberikan pengguna kesempatan untuk mencoba dan memberikan umpan balik. Ini memungkinkan pengembang untuk terus meningkatkan produk berdasarkan masukan nyata dari pengguna.
+#### **Fitur**
+- Login dan autentikasi pengguna.
+- Halaman utama untuk menampilkan daftar stok barang.
+- Fungsi tambah, edit, dan hapus data barang.
+- Validasi dasar input data.
 
-## Analysis (Analisis Kebutuhan)
-- Deskripsi : Menganalisis kebutuhan fungsional dan non-fungsional aplikasi Techmart, termasuk pemahaman pasar elektronik dan kebutuhan pengguna. Ini termasuk:
-  - Fitur pencarian produk elektronik berdasarkan kategori dan spesifikasi.
-  - Integrasi metode pembayaran yang aman.
-  - Fungsi keranjang belanja dan checkout yang mudah.
-  - Fitur pelacakan pesanan dan ulasan produk.
-  - Sistem promosi dan diskon untuk menarik pembeli.
+#### **Deliverable**
+- Dasar aplikasi dengan manajemen barang sederhana.
+- Database awal dengan tabel **users**, **stock**.
 
-- Aktivitas :
-  - Wawancara dengan pemilik dan pengguna potensial.
-  - Observasi tentang cara produk elektronik dijual dan dipesan.
+---
 
-## Design (Desain)
-  - Deskripsi : Desain awal aplikasi Techmart akan mencakup desain UI/UX untuk halaman utama, halaman produk, halaman keranjang, dan checkout.
-    - increment 1 : Fokus pada tampilan dan fitur dasar seperti halaman produk, sistem pencarian, dan keranjang belanja.
-    - increment 2 : Pengembangan fitur pelacakan pesanan, integrasi metode pembayaran, dan pembuatan dashboard admin.
-    - increment 3 : Implementasi fitur promosi, diskon, dan ulasan produk.
+### **Increment 2: Manajemen Transaksi Barang**
+#### **Tujuan**
+Menambahkan fitur pencatatan barang masuk dan keluar.
 
-## Development (Pengembangan)
-   - Deskripsi : Pada setiap iterasi, fitur dikembangkan dan diuji secara terpisah. Setiap fitur yang dikembangkan dapat diimplementasikan dan digunakan meskipun aplikasi belum selesai sepenuhnya.
-     - Increment 1: Pembuatan sistem pencarian produk, halaman produk, dan keranjang belanja.
-     - Increment 2: Pengembangan metode pembayaran, checkout, dan pelacakan pesanan.
-     - Increment 3: Penambahan sistem promosi, kupon diskon, dan ulasan produk.
+#### **Fitur**
+- Form barang masuk dan keluar dengan otomatisasi pembaruan stok.
+- Histori transaksi barang (masuk dan keluar).
+- Fungsi pencarian barang berdasarkan nama, kategori, atau ID.
 
-## Testing (Pengujian)
-  - Deskripsi: Setelah setiap increment selesai, aplikasi diuji untuk memastikan setiap fitur bekerja dengan baik. Tes dilakukan baik oleh pengembang maupun tester independen.
-    - Increment 1: Uji coba pencarian produk, penambahan ke keranjang, dan checkout.
-    - Increment 2: Uji coba transaksi pembayaran, konfirmasi pesanan, dan pelacakan pengiriman.
-    - Increment 3: Pengujian fitur promosi dan diskon, serta ulasan produk.
+#### **Deliverable**
+- Modul transaksi barang masuk/keluar.
+- Database tambahan: tabel **transactions**.
 
-## Maintenance (Pemeliharaan)
-   - Deskripsi : Setelah implementasi aplikasi pertama, pemeliharaan dilakukan untuk mengatasi bug, menambahkan fitur baru, atau melakukan pembaruan untuk mengikuti perkembangan teknologi.
+---
+
+### **Increment 3: Monitoring dan Notifikasi**
+#### **Tujuan**
+Memberikan kemampuan monitoring stok barang.
+
+#### **Fitur**
+- Peringatan otomatis untuk stok rendah (<10 unit).
+- Peringatan untuk barang yang habis.
+- Notifikasi pop-up atau email untuk admin.
+
+#### **Deliverable**
+- Dashboard monitoring stok.
+- Notifikasi otomatis terintegrasi.
+
+---
+
+### **Increment 4: Laporan dan Ekspor Data**
+#### **Tujuan**
+Menambahkan fitur laporan untuk keperluan analisis dan pelaporan.
+
+#### **Fitur**
+- Pembuatan laporan stok barang (harian, mingguan, bulanan).
+- Ekspor data ke format PDF/Excel.
+- Tampilan grafik untuk tren stok.
+
+#### **Deliverable**
+- Modul laporan lengkap.
+- Integrasi pustaka ekspor data (e.g., PHPSpreadsheet).
+
+---
+
+### **Increment 5: User Management dan Keamanan**
+#### **Tujuan**
+Meningkatkan keamanan dan mendukung multi-pengguna.
+
+#### **Fitur**
+- Sistem peran pengguna: Admin dan staf.
+- Log aktivitas pengguna.
+- Proteksi data dengan hashing password dan SSL.
+
+#### **Deliverable**
+- Modul manajemen pengguna.
+- Implementasi keamanan aplikasi.
+
+---
+
+### **Increment 6: Responsivitas dan Optimalisasi**
+#### **Tujuan**
+Meningkatkan pengalaman pengguna dan performa aplikasi.
+
+#### **Fitur**
+- Desain responsif untuk perangkat mobile.
+- Optimalisasi query database dan kinerja aplikasi.
+- Dokumentasi lengkap untuk pengembangan dan penggunaan.
+
+#### **Deliverable**
+- Aplikasi siap digunakan dengan tampilan responsif.
+- Dokumentasi user guide.
+
+---
+
+### **Keuntungan Metode Incremental**
+1. **Iteratif**: Setiap tahap memberikan hasil yang dapat digunakan dan diuji.
+2. **Minim Risiko**: Masalah ditemukan lebih awal, memudahkan perbaikan.
+3. **Fleksibel**: Mudah menambahkan fitur tambahan berdasarkan kebutuhan pengguna.
+4. **Keterlibatan Pengguna**: Feedback dapat diperoleh di setiap increment. 
+
+Increment ini membantu memastikan pengembangan aplikasi inventory berjalan terarah dan sesuai kebutuhan bisnis.
