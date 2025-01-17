@@ -11,7 +11,7 @@ export const Documents: Paths[] = [
         href: "/teknologi-yang-digunakan",
       },
       {
-        title: "Keterkaitan Dengan Mata Kuliah",
+        title: "Keterkaitan Aplikasi Inventory dengan Mata Kuliah",
         href: "/Kaitan Matkul",
       },
     ],
