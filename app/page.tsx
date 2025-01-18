@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-4 sm:text-7xl">
         Documents Inventory
       </h1>
-      <p className="max-w-[600px] text-foreground mb-8 sm:text-base">
+      <p className="max-w-[600px] text-foreground mb-8 sm:text-base">dbfjhfbdjhfseh
       </p>
       <div className="flex items-center gap-5">
         <Link
