@@ -10,10 +10,6 @@ export const Documents: Paths[] = [
         title: "Teknologi yang digunakan",
         href: "/teknologi-yang-digunakan",
       },
-      {
-        title: "Keterkaitan Aplikasi Inventory dengan Mata Kuliah",
-        href: "/Kaitan Matkul",
-      },
     ],
   },
   {
@@ -139,48 +135,5 @@ export const Documents: Paths[] = [
   },
   {
     spacer: true,
-  },
-  {
-    title: "Markup",
-    href: "/markup",
-    heading: "Components",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Desain",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
   },
 ];
